@@ -9,16 +9,15 @@ class App extends Component {
   
   render() { 
     return (
-      <div className="App">
+      <div className="App" onClick={this.changeName}>
         <h1>{this.state.word}</h1>
-        <p>Noob Developer #1</p>
-        <button onClick={this.changeName}>Click</button>
+        <p className="detail">Noob Developer #1</p>
       </div>
     );
   }
 
-  changeName() {
-    this.state.word === "Hello" ? this.setState({word: "Goodbye"}) : this.setState({word: "Hello"}); 
+  changeName = () => {
+    this.state.word === "Hello" ? this.setState({word: "Pattarapon Kittisrisawai"}) : this.setState({word: "Hello"}); 
   }
 }
 

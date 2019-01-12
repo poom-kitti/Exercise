@@ -8,3 +8,7 @@
   flex-flow: column wrap;
   padding: 0 50px 0 50px;
 }
+
+.detail {
+  color: red;
+}
